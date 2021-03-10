@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheExcuse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1><strong>OMG! you will not belive me but...</strong></h1> 
+    
+    <h2 id="excusa"></h2>
+
+    <script>
+        let who = ['The dog','My grandma','His turtle','My bird'];
+        let action = ['ate','peed','crushed','broke'];
+        let what = ['my homework', 'the keys', 'the car'];
+        let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
+        
+        function excuse(){
+            let functionwho=math.floor(Math.random()*who.length);
+            let functionaction=math.floor(Math.random()*action.length);
+            let functionwhat=math.floor(Math.random()*what.length);
+            let functionwhen=math.floor(Math.random()*when.length);
+            return who(funtionwho)+action(functionaction)+what(functionwhat)+when(functionwhen)
+        }
+        document.getElementById("excusa").innerHTML=excuse();
+        
+    </script>
+     
+</body>
+</html>
