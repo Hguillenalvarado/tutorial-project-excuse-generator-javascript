@@ -19,11 +19,11 @@
         let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
         
         function excuse(){
-            let functionwho=math.floor(Math.random()*who.length);
-            let functionaction=math.floor(Math.random()*action.length);
-            let functionwhat=math.floor(Math.random()*what.length);
-            let functionwhen=math.floor(Math.random()*when.length);
-            return who(funtionwho)+action(functionaction)+what(functionwhat)+when(functionwhen)
+            let functionwho=Math.floor(Math.random()*who.length);
+            let functionaction=Math.floor(Math.random()*action.length);
+            let functionwhat=Math.floor(Math.random()*what.length);
+            let functionwhen=Math.floor(Math.random()*when.length);
+            return who[functionwho]+" "+action[functionaction]+" "+what[functionwhat]+" "+when[functionwhen];
         }
         document.getElementById("excusa").innerHTML=excuse();
         
